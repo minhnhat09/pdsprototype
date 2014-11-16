@@ -17,7 +17,7 @@ import com.mongodb.MongoClientURI;
 import fr.esiag.sim.model.Event;
 
 @RestController
-public class EventController {
+	public class EventController {
 
 	@RequestMapping("/events")
 	public List<Event> getEvents() {
@@ -30,7 +30,6 @@ public class EventController {
 	public List<Event> getData(){
 		List<Event> events = new ArrayList<>();
 		try {
-			
 			//MongoClient mongo = new MongoClient("mongodb://admin:1109@ds063929.mongolab.com/events",63929);
 			
 			String textUri = "mongodb://admin:1109@ds063929.mongolab.com:63929/events";
